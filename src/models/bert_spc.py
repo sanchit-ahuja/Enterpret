@@ -13,7 +13,8 @@ class BERT_SPC(nn.Module):
 
     def forward(self, inputs):
         txt_bert, segment_bert = inputs[0], inputs[1]
-        _, pooled_output = self.bert(txt_bert, token_type_ids = segment_bert)
+        _, pooled_output = self.bert(txt_bert, token_type_ids = segment_bert, 
+        return_dict = False)
         pooled_output = self.dropout(pooled_output)
         logits = self.dense(pooled_output)
 

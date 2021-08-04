@@ -1,2 +1,4 @@
 enterpret-env/
 *.pdf
+*__pycache__
+*.pt

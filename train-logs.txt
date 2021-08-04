@@ -1,0 +1,148 @@
+INFO:root:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+INFO:root:epoch: 0
+INFO:root:loss: 1.1094, acc: 0.3688
+INFO:root:loss: 1.0831, acc: 0.3781
+INFO:root:loss: 1.0901, acc: 0.3708
+INFO:root:loss: 1.0791, acc: 0.3891
+INFO:root:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+INFO:root:epoch: 0
+INFO:root:loss: 1.1336, acc: 0.3312
+INFO:root:loss: 1.1014, acc: 0.3719
+INFO:root:loss: 1.0814, acc: 0.4000
+INFO:root:loss: 1.0720, acc: 0.4219
+INFO:root:loss: 1.0474, acc: 0.4500
+INFO:root:loss: 1.0351, acc: 0.4583
+INFO:root:loss: 1.0100, acc: 0.4884
+INFO:root:loss: 0.9862, acc: 0.5117
+INFO:root:loss: 0.9747, acc: 0.5229
+INFO:root:loss: 0.9563, acc: 0.5375
+INFO:root:loss: 0.9454, acc: 0.5477
+INFO:root:loss: 0.9417, acc: 0.5510
+INFO:root:loss: 0.9278, acc: 0.5625
+INFO:root:loss: 0.9176, acc: 0.5687
+INFO:root:loss: 0.9040, acc: 0.5775
+INFO:root:loss: 0.8972, acc: 0.5813
+INFO:root:loss: 0.8900, acc: 0.5860
+INFO:root:loss: 0.8814, acc: 0.5927
+INFO:root:loss: 0.8776, acc: 0.5947
+INFO:root:loss: 0.8704, acc: 0.5994
+INFO:root:> val_acc: 0.7113, val_f1: 0.6918
+INFO:root:>> saved: state_dict/bert-spc_val_acc_0.7113.pt
+INFO:root:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+INFO:root:epoch: 1
+INFO:root:loss: 0.6323, acc: 0.7438
+INFO:root:loss: 0.5949, acc: 0.7750
+INFO:root:loss: 0.5964, acc: 0.7792
+INFO:root:loss: 0.5763, acc: 0.7812
+INFO:root:loss: 0.5846, acc: 0.7750
+INFO:root:loss: 0.5862, acc: 0.7698
+INFO:root:loss: 0.5782, acc: 0.7723
+INFO:root:loss: 0.5800, acc: 0.7742
+INFO:root:loss: 0.5886, acc: 0.7757
+INFO:root:loss: 0.5908, acc: 0.7756
+INFO:root:loss: 0.5919, acc: 0.7739
+INFO:root:loss: 0.5920, acc: 0.7724
+INFO:root:loss: 0.5871, acc: 0.7736
+INFO:root:loss: 0.5833, acc: 0.7750
+INFO:root:loss: 0.5777, acc: 0.7779
+INFO:root:loss: 0.5826, acc: 0.7766
+INFO:root:loss: 0.5881, acc: 0.7724
+INFO:root:loss: 0.5879, acc: 0.7708
+INFO:root:loss: 0.5871, acc: 0.7714
+INFO:root:loss: 0.5895, acc: 0.7672
+INFO:root:> val_acc: 0.7262, val_f1: 0.7250
+INFO:root:>> saved: state_dict/bert-spc_val_acc_0.7262.pt
+INFO:root:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+INFO:root:epoch: 2
+INFO:root:loss: 0.4420, acc: 0.8500
+INFO:root:loss: 0.4209, acc: 0.8406
+INFO:root:loss: 0.4135, acc: 0.8354
+INFO:root:loss: 0.3836, acc: 0.8500
+INFO:root:loss: 0.3694, acc: 0.8588
+INFO:root:loss: 0.3769, acc: 0.8583
+INFO:root:loss: 0.3749, acc: 0.8598
+INFO:root:loss: 0.3759, acc: 0.8602
+INFO:root:loss: 0.3698, acc: 0.8611
+INFO:root:loss: 0.3683, acc: 0.8619
+INFO:root:loss: 0.3664, acc: 0.8614
+INFO:root:loss: 0.3724, acc: 0.8578
+INFO:root:loss: 0.3846, acc: 0.8490
+INFO:root:loss: 0.3846, acc: 0.8522
+INFO:root:loss: 0.3816, acc: 0.8533
+INFO:root:loss: 0.3863, acc: 0.8520
+INFO:root:loss: 0.3894, acc: 0.8500
+INFO:root:loss: 0.3923, acc: 0.8472
+INFO:root:loss: 0.3926, acc: 0.8477
+INFO:root:loss: 0.3937, acc: 0.8472
+INFO:root:> val_acc: 0.7225, val_f1: 0.7206
+INFO:root:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+INFO:root:epoch: 3
+INFO:root:loss: 0.3011, acc: 0.8938
+INFO:root:loss: 0.3306, acc: 0.8875
+INFO:root:loss: 0.3057, acc: 0.8917
+INFO:root:loss: 0.2756, acc: 0.9062
+INFO:root:loss: 0.2655, acc: 0.9113
+INFO:root:loss: 0.2502, acc: 0.9167
+INFO:root:loss: 0.2417, acc: 0.9196
+INFO:root:loss: 0.2356, acc: 0.9211
+INFO:root:loss: 0.2410, acc: 0.9208
+INFO:root:loss: 0.2405, acc: 0.9213
+INFO:root:loss: 0.2474, acc: 0.9199
+INFO:root:loss: 0.2446, acc: 0.9208
+INFO:root:loss: 0.2418, acc: 0.9221
+INFO:root:loss: 0.2402, acc: 0.9228
+INFO:root:loss: 0.2332, acc: 0.9258
+INFO:root:loss: 0.2375, acc: 0.9242
+INFO:root:loss: 0.2395, acc: 0.9224
+INFO:root:loss: 0.2393, acc: 0.9215
+INFO:root:loss: 0.2436, acc: 0.9194
+INFO:root:loss: 0.2432, acc: 0.9184
+INFO:root:> val_acc: 0.7438, val_f1: 0.7384
+INFO:root:>> saved: state_dict/bert-spc_val_acc_0.7438.pt
+INFO:root:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+INFO:root:epoch: 4
+INFO:root:loss: 0.1479, acc: 0.9437
+INFO:root:loss: 0.1433, acc: 0.9500
+INFO:root:loss: 0.1252, acc: 0.9563
+INFO:root:loss: 0.1233, acc: 0.9594
+INFO:root:loss: 0.1129, acc: 0.9650
+INFO:root:loss: 0.1065, acc: 0.9646
+INFO:root:loss: 0.1055, acc: 0.9634
+INFO:root:loss: 0.1158, acc: 0.9617
+INFO:root:loss: 0.1172, acc: 0.9618
+INFO:root:loss: 0.1220, acc: 0.9613
+INFO:root:loss: 0.1214, acc: 0.9619
+INFO:root:loss: 0.1241, acc: 0.9615
+INFO:root:loss: 0.1222, acc: 0.9620
+INFO:root:loss: 0.1292, acc: 0.9598
+INFO:root:loss: 0.1321, acc: 0.9587
+INFO:root:loss: 0.1359, acc: 0.9574
+INFO:root:loss: 0.1393, acc: 0.9570
+INFO:root:loss: 0.1400, acc: 0.9566
+INFO:root:loss: 0.1419, acc: 0.9566
+INFO:root:loss: 0.1428, acc: 0.9559
+INFO:root:> val_acc: 0.7450, val_f1: 0.7361
+INFO:root:>> saved: state_dict/bert-spc_val_acc_0.745.pt
+INFO:root:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+INFO:root:epoch: 5
+INFO:root:loss: 0.1042, acc: 0.9750
+INFO:root:loss: 0.1179, acc: 0.9688
+INFO:root:loss: 0.1134, acc: 0.9708
+INFO:root:loss: 0.1103, acc: 0.9703
+INFO:root:loss: 0.0954, acc: 0.9750
+INFO:root:loss: 0.0924, acc: 0.9729
+INFO:root:loss: 0.0853, acc: 0.9741
+INFO:root:loss: 0.0854, acc: 0.9750
+INFO:root:loss: 0.0898, acc: 0.9736
+INFO:root:loss: 0.0916, acc: 0.9738
+INFO:root:loss: 0.0895, acc: 0.9739
+INFO:root:loss: 0.0913, acc: 0.9729
+INFO:root:loss: 0.0914, acc: 0.9736
+INFO:root:loss: 0.0914, acc: 0.9737
+INFO:root:loss: 0.0953, acc: 0.9725
+INFO:root:loss: 0.1002, acc: 0.9703
+INFO:root:loss: 0.1007, acc: 0.9706
+INFO:root:loss: 0.1035, acc: 0.9691
+INFO:root:loss: 0.1067, acc: 0.9681
+INFO:root:loss: 0.1059, acc: 0.9672
+INFO:root:> val_acc: 0.7262, val_f1: 0.7206

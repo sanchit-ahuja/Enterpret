@@ -59,13 +59,6 @@ class ABSADataset(Dataset):
             segment_indices = ([0] * (text_len + 2) + [1]*(aspect_len + 1))
             segment_indices = torch.LongTensor(
                 pad_and_truncate(segment_indices, 350))
-            # aspect_indices = self.tokenizer(
-            # 	str(aspect),
-            # 	padding=True,
-            # 	truncation=True,
-            # 	max_length=400,  # Max length assuming
-            # 	return_tensors='pt'
-            # )
             polarity = int(polarity)
             data = {
                 "text_indices": text_indices['input_ids'].squeeze(0),

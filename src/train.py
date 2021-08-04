@@ -13,6 +13,11 @@ from transformers import BertModel, BertTokenizer, AdamW
 
 from models.bert_spc import BERT_SPC
 
+logging.basicConfig(
+    filename='train-logs.txt',
+    filemode='a',
+    level=logging.INFO
+)
 logger = logging.getLogger()
 logger.setLevel(logging.INFO)
 logger.addHandler(logging.StreamHandler(sys.stdout))
@@ -20,7 +25,7 @@ logger.addHandler(logging.StreamHandler(sys.stdout))
 
 def train(model, criterion, log_step, optimizer,
 		  train_data_loader, val_data_loader,
-		  devices, num_epoch=10, patience=5):
+		  device, num_epoch=4, patience=5):
 	max_val_acc = 0
 	max_val_f1 = 0
 	max_val_epoch = 0
@@ -64,8 +69,8 @@ def train(model, criterion, log_step, optimizer,
 			max_val_epoch = i_epoch
 			if not os.path.exists('state_dict'):
 				os.mkdir('state_dict')
-			path = 'state_dict/{0}_{1}_val_acc_{2}'.format(
-				'bert-spc', round(val_acc, 4))
+			path = 'models/bert-spc_val_acc_{0}.pt'.format(
+				round(val_acc, 4))
 			torch.save(model.state_dict(), path)
 			logger.info('>> saved: {}'.format(path))
 		if val_f1 > max_val_f1:
@@ -112,7 +117,7 @@ def evaluate_acc_f1(model, data_loader, device):
 if __name__ == "__main__":
 	bert_model = BertModel.from_pretrained('bert-base-uncased')
 	tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
-	data_path = '/media/sanchit/New1/enterpret/data/train.csv'
+	data_path = '/srv/home/ahuja/Enterpret/data/train.csv'
 	train_df = pd.read_csv(data_path)
 	device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 	dataset = ABSADataset(train_df, tokenizer)
@@ -127,4 +132,4 @@ if __name__ == "__main__":
 	val_data_loader = DataLoader(
 		dataset=val_data, batch_size=16, shuffle=False)
 	path_model = train(model, criterion, 10, optimizer,
-					   train_data_loader, val_data_loader, device)
+					   train_data_loader, val_data_loader, device, num_epoch = 6)
