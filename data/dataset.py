@@ -64,15 +64,15 @@ class ABSADataset(Dataset):
             str(text),
             str(aspect),
             padding='max_length',
-            max_length=512,  # Max length assuming
+            max_length=400,  # Max length assuming
             return_tensors='pt',
             add_special_tokens=True,
         )
 
         segment_indices = ([0] * (text_len + 2) + [1]*(aspect_len + 1))
         segment_indices = torch.LongTensor(
-            pad_and_truncate(segment_indices, 512))
-        return text_indices['input_ids'].squeeze(0), segment_indices
+            pad_and_truncate(segment_indices, 400))
+        return text_indices['input_ids'], segment_indices
 
     def __init__(self, df, tokenizer):
         self.df = ABSADataset.preprocess(df)
